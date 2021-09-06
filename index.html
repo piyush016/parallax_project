@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" class="logo">Jungle</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <h3 id="text"><span>It's time for a new </span><br>Adventure</h3>
+        <img src="img/bird1.png" id="bird1" alt="">
+        <img src="img/bird2.png" id="bird2" alt="">
+        <img src="img/forest.png" id="forest" alt="">
+        <button id="btn">Explore</button>
+        <img src="img/rocks.png" id="rocks" alt="">
+        <img src="img/water.png" id="water" alt="">
+
+    </section>
+
+    <div class="sec">
+        <h2>Just for fun</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque libero facere earum magnam dolores
+            consequuntur! Aperiam recusandae officiis quaerat soluta necessitatibus omnis perspiciatis assumenda
+            corporis ut. Maiores reprehenderit eveniet enim.
+            Atque ex nulla aperiam omnis molestias eaque perferendis porro cumque ipsam aut, reprehenderit tempora
+            itaque, fugiat aspernatur, sapiente officia ad? Officiis natus praesentium esse magni. Quod doloribus
+            corrupti voluptatem sit.
+            Dolores beatae voluptatibus tenetur. Ipsa, vero. Veritatis atque perferendis in, odio, soluta rerum
+            laudantium velit accusamus commodi non molestiae corporis quia sapiente ipsum quo vero nemo beatae debitis
+            veniam illo. <br><br>
+            Fuga voluptates officia placeat id ipsam! Perspiciatis, recusandae veritatis, corrupti cum commodi est atque
+            dolorum libero illo laboriosam quia mollitia tempora modi? Modi porro odit repellendus distinctio at neque
+            corrupti!
+            Quas adipisci culpa saepe amet accusantium. Quia similique reiciendis enim nemo totam quo eaque, dolorem
+            quaerat aperiam architecto illo omnis facilis nesciunt aspernatur, eius animi debitis at, iste velit fugit.
+            Explicabo sequi libero tempore, fuga voluptatibus voluptas aliquid aliquam deserunt rerum dolor nostrum quam
+            obcaecati unde. Nostrum deleniti dolorum error commodi eveniet distinctio nisi, debitis blanditiis quia
+            similique? Doloremque, nobis. <br><br>
+            Iste laborum minus animi laboriosam illum eius at minima. Aliquid tempora ipsam error aspernatur? Deleniti
+            odio magni animi accusantium pariatur aperiam, tempore dignissimos porro vel libero quisquam dolorum tenetur
+            voluptatibus?
+            Exercitationem fugiat cupiditate suscipit hic, laboriosam nesciunt velit necessitatibus reprehenderit!
+            Dignissimos nemo repellendus porro, officia repudiandae veniam, fugit autem doloribus nostrum eum eveniet
+            nisi sit nihil itaque? Sequi, natus at.
+            Sunt quisquam iusto consequuntur alias eius! Rem pariatur accusamus perspiciatis blanditiis deleniti
+            doloribus, doloremque sapiente inventore cum vero quas earum error consequatur neque placeat molestiae nisi,
+            debitis mollitia. Voluptatem, sed.
+            Possimus nihil explicabo excepturi praesentium! Quaerat neque et error voluptas eum consequatur quae
+            voluptatem temporibus nihil molestias, dolorem, nisi voluptatum assumenda doloribus perferendis adipisci!
+            Pariatur earum modi eaque labore quia. <br><br>
+            Magnam esse provident dolor molestiae hic, libero cupiditate officiis officia doloremque iusto tempora
+            corrupti impedit ad voluptatum, placeat reiciendis. Perspiciatis labore, cupiditate voluptatem accusamus
+            quibusdam beatae delectus facere ex dolores?
+            Quia distinctio eligendi voluptatem dolorem, assumenda id odit adipisci doloremque facilis dolores rem
+            voluptates optio qui vitae necessitatibus eius esse soluta quibusdam explicabo veniam iure! Reprehenderit
+            quia maxime dolores a!
+            Ut nobis itaque ex assumenda numquam quaerat nihil iure? Aliquam, quos quia dolorum accusantium rem ipsam
+            nesciunt sequi illum. Blanditiis autem repellendus aliquid! Officia beatae qui modi reprehenderit, ratione
+            magnam?
+            Expedita sequi vero vel eius commodi alias nulla atque dignissimos fugit magni esse, maxime facilis eaque
+            corrupti quia earum praesentium architecto aliquam excepturi enim! Ipsum qui culpa quam repellendus nemo.
+            Repellendus reprehenderit totam inventore temporibus a voluptatum modi qui, consequuntur natus dolor ea
+            veritatis voluptatem in officia provident. Debitis facilis doloremque facere, totam mollitia omnis
+            veritatis. Quod sint maxime explicabo!</p>
+    </div>
+
+    <script>
+        let text = document.getElementById("text");
+        let bird1 = document.getElementById("bird1");
+        let bird2 = document.getElementById("bird2");
+        let btn = document.getElementById("btn");
+        let rocks = document.getElementById("rocks");
+        let forest = document.getElementById("forest");
+        let water = document.getElementById("water");
+        let header = document.getElementById("header");
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+
+            text.style.top = 55 + value * -0.3 + '%';
+            bird1.style.top = value * -0.9 + 'px';
+            bird1.style.left = value * 1 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
+</body>
+
+</html>
